@@ -9,7 +9,7 @@
  * @brief Vector Customer list will contain list of all the cutomer;
  * 
  */
-std::vector<Customer> CutomerLis;
+std::vector<Customer> CustomerList;
 
 /**
  * @brief Customer class will have the data related to the perticular customer
