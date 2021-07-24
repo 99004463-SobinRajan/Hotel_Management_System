@@ -54,7 +54,7 @@ public:
 
     int getTotalBill() const;
 
-    std::string setreview(std::string review);
+    void setreview(std::string review);
     std::string getReview() const;
 
 };
