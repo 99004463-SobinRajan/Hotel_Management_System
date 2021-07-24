@@ -34,6 +34,22 @@ public:
     Customer(/* args */);
 
     /**
+     * @brief Construct a new Customer object
+     * 
+     * @param name 
+     * @param id 
+     * @param phoneNumber 
+     * @param idProof 
+     * @param idNumber 
+     * @param roomNumber 
+     * @param roomtype 
+     * @param totalBill 
+     * @param review 
+     */
+    Customer(std::string name, int id, long phoneNumber, std::string idProof,
+ std::string idNumber, int roomNumber, std::string roomtype, int totalBill, std::string review);
+
+    /**
      * @brief Set the Name object
      * 
      */
@@ -179,20 +195,21 @@ bool foodOrder();
  * @brief 
  * 
  */
-void addCustomer();
+void addCustomer(std::vector<Customer> *list, std::string name, int id, long phoneNumber, std::string idProof,
+ std::string idNumber, int roomNumber, std::string roomtype, int totalBill, std::string review);
 
 /**
  * @brief Create a Bill object
  * 
  * @return int 
  */
-int createBill();
+int createBill(std::vector<Customer> *list, int id);
 
 /**
  * @brief 
  * 
  */
-bool AcceptFoodOrder();
+bool AcceptFoodOrder(std::vector<Customer> *list, int id);
 
 /**
  * @brief 
@@ -200,7 +217,7 @@ bool AcceptFoodOrder();
  * @return true 
  * @return false 
  */
-bool putHousKeepingRequest();
+bool putHousKeepingRequest(std::vector<Customer> *list, int id);
 
 
 
